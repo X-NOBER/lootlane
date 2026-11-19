@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
-import { useDemoEconomy } from "@/components/demo-economy-provider";
+import { useDemoEconomy } from "./demo-economy-provider";
 import {
   ABILITIES,
   BOX_COST,
@@ -12,7 +12,7 @@ import {
   rollAbility,
   type AbilityDefinition,
   type RolledAbility
-} from "@/lib/ability-economy";
+} from "../lib/ability-economy";
 
 const REEL_LENGTH = 44;
 const START_INDEX = 2;

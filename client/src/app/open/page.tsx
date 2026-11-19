@@ -1,4 +1,4 @@
-import { DemoSpinner } from "@/components/demo-spinner";
+import { DemoSpinner } from "../../components/demo-spinner";
 
 export default function OpenPage() {
   return (

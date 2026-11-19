@@ -5,7 +5,7 @@ import {
   BOX_COST,
   STARTING_CREDITS,
   type RolledAbility
-} from "@/lib/ability-economy";
+} from "../lib/ability-economy";
 
 export type OwnedAbility = RolledAbility & {
   id: string;

@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { useDemoEconomy } from "@/components/demo-economy-provider";
-import { formatCredits, formatSigned, formatStars } from "@/lib/ability-economy";
+import { useDemoEconomy } from "../../components/demo-economy-provider";
+import { formatCredits, formatSigned, formatStars } from "../../lib/ability-economy";
 
 export default function AccountPage() {
   const { credits, estimatedProfit, inventory, realizedProfit, sellAbility } = useDemoEconomy();

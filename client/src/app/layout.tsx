@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { DemoEconomyProvider } from "@/components/demo-economy-provider";
-import { SiteHeader } from "@/components/site-header";
+import { DemoEconomyProvider } from "../components/demo-economy-provider";
+import { SiteHeader } from "../components/site-header";
 import "./globals.css";
 
 export const metadata: Metadata = {
