@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: lootlane-web
+    runtime: node
+    plan: free
+    rootDir: client
+    branch: main
+    autoDeployTrigger: commit
+    buildCommand: "npm install && npm run build"
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_ENV
+        value: production
+
+  - type: web
+    name: lootlane-api
+    runtime: node
+    plan: free
+    rootDir: server
+    branch: main
+    autoDeployTrigger: commit
+    buildCommand: "npm install && npm run build"
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
